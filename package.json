@@ -3,8 +3,8 @@
   "bin": {
     "findenv": "./index.js"
   },
-  "version": "1.0.1",
-  "description": "A module that helps you get a list of all environment variables in a project specified by process.env.ENVIRONMENT_VARIABLE",
+  "version": "1.0.2",
+  "description": "Generate a .env.example file for a project based on variables referenced process.env.ENVIRONMENT_VARIABLE in the project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
