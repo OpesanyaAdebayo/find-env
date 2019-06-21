@@ -1,2 +1,6 @@
 # find-env
-A module that helps you get a list of all environment variables in a project specified by process.env.ENIRONMENT_VARIABLE
+Generate a .env.example file for a project based on variables referenced process.env.ENVIRONMENT_VARIABLE in the project.
+
+# Usage
+run `npm i @bayoopesanya/findenv`
+run `npx findenv`
