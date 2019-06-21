@@ -13,10 +13,6 @@ const child = spawn("grep", [
   `${appRoot.toString()}/`
 ]);
 
-child.on("exit", code => {
-  console.log("Process exited with code " + code);
-});
-
 child.stdout.on("data", data => {
   const str = data.toString();
   const environmentVariables = str.match(/process.env.\w+/gi);
@@ -41,5 +37,6 @@ child.stdout.on("data", data => {
   .join("=\n");
 
   fs.writeFileSync(".env", formattedVariables);
+  console.log('Successfully created .env file.');
 });
 console.log(appRoot.toString())
