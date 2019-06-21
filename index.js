@@ -24,7 +24,7 @@ child.stdout.on("data", data => {
   environmentVariables.forEach(variable => {
     uniqueVariableNames.add(variable.slice(12));
   });
-  fs.readFile(`${appRoot.toString()}/.env`, (err, data) => {
+  fs.readFile(`${appRoot.toString()}/.env.example`, (err, data) => {
     if (!data) {
       return;
     }
@@ -37,6 +37,6 @@ child.stdout.on("data", data => {
   .join("=\n");
 
   fs.writeFileSync(".env", formattedVariables);
-  console.log('Successfully created .env file.');
+  console.log('Successfully created .env.example file.');
 });
 console.log(appRoot.toString())
