@@ -36,7 +36,7 @@ child.stdout.on("data", data => {
   .sort()
   .join("=\n");
 
-  fs.writeFileSync(".env", formattedVariables);
+  fs.writeFileSync(".env.example", formattedVariables);
   console.log('Successfully created .env.example file.');
 });
 console.log(appRoot.toString())
