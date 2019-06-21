@@ -3,7 +3,7 @@
   "bin": {
     "findenv": "./index.js"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a .env.example file for a project based on variables referenced process.env.ENVIRONMENT_VARIABLE in the project.",
   "main": "index.js",
   "scripts": {
